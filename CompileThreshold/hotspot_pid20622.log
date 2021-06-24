@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='20622' time_ms='1623183279233'>
+<vm_version>
+<name>
+OpenJDK 64-Bit Server VM
+</name>
+<release>
+25.161-b14
+</release>
+<info>
+OpenJDK 64-Bit Server VM (25.161-b14) for linux-amd64 JRE (1.8.0_161-b14), built on Jan 12 2018 11:48:43 by &quot;mockbuild&quot; with gcc 4.8.5 20150623 (Red Hat 4.8.5-16)
+</info>
+</vm_version>
+<vm_arguments>
+<args>
+-XX:+UnlockDiagnosticVMOptions -XX:+LogCompilation -XX:-TieredCompilation 
+</args>
+<command>
+Test
+</command>
+<launcher>
+SUN_STANDARD
+</launcher>
+<properties>
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.version=25.161-b14
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vm.info=mixed mode, sharing
+java.ext.dirs=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+java.endorsed.dirs=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/endorsed
+sun.boot.library.path=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/amd64
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+java.home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre
+java.class.path=.
+sun.boot.class.path=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre/classes
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=1.8
+java.vm.vendor=Oracle Corporation
+sun.java.command=Test
+sun.java.launcher=SUN_STANDARD
+</properties>
+</vm_arguments>
+<tty>
+<writer thread='140559168521984'/>
+<thread_logfile thread='140559168521984' filename='/tmp/hs_c140559168521984_pid20622.log'/>
+<writer thread='140559167469312'/>
+<thread_logfile thread='140559167469312' filename='/tmp/hs_c140559167469312_pid20622.log'/>
+<blob name='MethodHandlesAdapterBlob' size='32000'>
+<sect index='1' size='32000' free='31628'/>
+</blob>
+<writer thread='140559691683584'/>
+<nmethod compile_id='1' compile_kind='c2n' entry='0x00007fd68fbfd640' size='848' address='0x00007fd68fbfd4d0' relocation_offset='296' consts_offset='848' insts_offset='368' method='java/lang/System currentTimeMillis ()J' bytes='0' count='5000' backedge_count='1' iicount='10000' stamp='0.050'/>
+<task_queued compile_id='2' method='Test call ()V' bytes='17' count='5000' backedge_count='1' iicount='10000' stamp='0.050' comment='count' hot_count='10000'/>
+<writer thread='140559168521984'/>
+<nmethod compile_id='2' compiler='C2' entry='0x00007fd68fbfe9a0' size='544' address='0x00007fd68fbfe850' relocation_offset='296' insts_offset='336' stub_offset='432' scopes_data_offset='472' scopes_pcs_offset='488' dependencies_offset='536' oops_offset='456' method='Test call ()V' bytes='17' count='5000' backedge_count='1' iicount='10000' stamp='0.051'/>
+<writer thread='140559172732672'/>
+<destroy_vm stamp='1.051'/>
+<tty_done stamp='1.051'/>
+</tty>
+<compilation_log thread='140559167469312'>
+<fragment>
+<![CDATA[
+<start_compile_thread name='C2 CompilerThread1' thread='140559167469312' process='20622' stamp='0.040'/>
+]]>
+</fragment>
+</compilation_log>
+<compilation_log thread='140559168521984'>
+<start_compile_thread name='C2 CompilerThread0' thread='140559168521984' process='20622' stamp='0.040'/>
+<task compile_id='2' method='Test call ()V' bytes='17' count='5000' backedge_count='1' iicount='10000' stamp='0.050'>
+<phase name='parse' nodes='3' live='3' stamp='0.050'>
+<type id='719' name='void'/>
+<klass id='827' name='Test' flags='1'/>
+<method id='828' holder='827' name='call' return='719' flags='10' bytes='17' iicount='10000'/>
+<klass id='831' name='java/io/PrintStream' unloaded='1'/>
+<uncommon_trap method='828' bci='13' reason='unloaded' action='reinterpret' index='32' klass='831'/>
+<parse method='828' uses='10000' stamp='0.050'>
+<bc code='184' bci='0'/>
+<type id='718' name='long'/>
+<klass id='730' name='java/lang/System' flags='17'/>
+<method id='830' holder='730' name='currentTimeMillis' return='718' flags='265' bytes='0' compile_id='1' compile_kind='c2n' iicount='10000'/>
+<call method='830' count='6701' prof_factor='1' inline='1'/>
+<intrinsic id='_currentTimeMillis' nodes='4'/>
+<bc code='154' bci='5'/>
+<branch target_bci='16' taken='6701' not_taken='0' cnt='6701' prob='always'/>
+<uncommon_trap bci='5' reason='unstable_if' action='reinterpret' comment='taken always'/>
+<parse_done nodes='41' live='39' memory='23408' stamp='0.050'/>
+</parse>
+<phase_done name='parse' nodes='42' live='23' stamp='0.050'/>
+</phase>
+<phase name='optimizer' nodes='42' live='23' stamp='0.050'>
+<phase name='ccp' nodes='42' live='23' stamp='0.050'>
+<phase_done name='ccp' nodes='42' live='23' stamp='0.050'/>
+</phase>
+<phase name='idealLoop' nodes='42' live='23' stamp='0.050'>
+<phase_done name='idealLoop' nodes='42' live='23' stamp='0.051'/>
+</phase>
+<phase_done name='optimizer' nodes='42' live='23' stamp='0.051'/>
+</phase>
+<phase name='matcher' nodes='42' live='23' stamp='0.051'>
+<phase_done name='matcher' nodes='28' live='28' stamp='0.051'/>
+</phase>
+<phase name='regalloc' nodes='34' live='34' stamp='0.051'>
+<regalloc attempts='0' success='1'/>
+<phase_done name='regalloc' nodes='34' live='34' stamp='0.051'/>
+</phase>
+<phase name='output' nodes='34' live='34' stamp='0.051'>
+<phase_done name='output' nodes='41' live='40' stamp='0.051'/>
+</phase>
+<code_cache total_blobs='196' nmethods='2' adapters='145' free_code_cache='49837888'/>
+<task_done success='1' nmsize='120' count='5000' backedge_count='1' stamp='0.051'/>
+</task>
+</compilation_log>
+<hotspot_log_done stamp='1.051'/>
+</hotspot_log>

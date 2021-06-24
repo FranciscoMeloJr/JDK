@@ -1,0 +1,40 @@
+     36    1       1       java.lang.Object::<init> (1 bytes)
+     37    2       1       java.lang.String::hashCode (55 bytes)
+     38    3       1       java.lang.String::charAt (29 bytes)
+     38    5     n 0       java.lang.System::arraycopy (native)   (static)
+     38    4       1       java.lang.Math::min (11 bytes)
+     38    6       1       java.lang.String::length (6 bytes)
+     38    7       1       java.lang.String::indexOf (70 bytes)
+     38    8       1       java.lang.String::equals (81 bytes)
+     40    9       1       java.lang.AbstractStringBuilder::ensureCapacityInternal (27 bytes)
+     41   10       1       java.lang.AbstractStringBuilder::append (50 bytes)
+     41   12       1       java.lang.ref.Reference::get (5 bytes)
+     41   11       1       java.lang.String::getChars (62 bytes)
+     42   13       1       java.util.Arrays::copyOfRange (63 bytes)
+     42   14       1       java.lang.ThreadLocal::access$400 (5 bytes)
+Starting microbenchmark on iterating over collections with a call to size() in each iteration
+     43   19       1       java.util.ArrayList::calculateCapacity (16 bytes)
+     43   20       1       java.util.ArrayList::ensureExplicitCapacity (26 bytes)
+     43   21       1       java.lang.Integer::valueOf (32 bytes)
+     43   17       1       java.lang.Number::<init> (5 bytes)
+     43   15       1       java.util.ArrayList::add (29 bytes)
+     44   16       1       java.util.ArrayList::ensureCapacityInternal (13 bytes)
+     44   18       1       java.lang.Integer::<init> (10 bytes)
+Warming up ...
+     46   22       1       java.lang.Integer::intValue (5 bytes)
+     46   24       1       java.util.ArrayList::rangeCheck (22 bytes)
+     46   25       1       java.util.ArrayList::elementData (7 bytes)
+     46   23       1       java.util.ArrayList::get (11 bytes)
+     48   26       1       java.util.ArrayList::size (5 bytes)
+     50   27 %     1       PerformantIteration::iterateWithConstantSize @ 16 (59 bytes)
+     50   28       1       PerformantIteration::iterateWithConstantSize (59 bytes)
+     51   29 %     1       PerformantIteration::iterateWithDynamicSize @ 9 (57 bytes)
+     51   30       1       PerformantIteration::iterateWithDynamicSize (57 bytes)
+Starting the actual test
+Test completed... printing results
+constantSizeBenchmark : 154481
+dynamicSizeBenchmark : 246587
+     56   31       1       sun.misc.FDBigInteger::mult (64 bytes)
+dynamicSizeBenchmark/constantSizeBenchmark : 1.5962286624245052
+     56   32       1       sun.misc.FDBigInteger::<init> (30 bytes)
+     56   33       1       java.lang.String::<init> (82 bytes)

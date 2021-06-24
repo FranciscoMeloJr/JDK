@@ -1,0 +1,2 @@
+javac SampleObject.java
+java SampleObject
